@@ -1,6 +1,6 @@
 Name: iceauth
-Version: 1.0.1
-Release: %mkrel 4
+Version: 1.0.2
+Release: %mkrel 1
 Summary: ICE authority file utility
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -19,9 +19,7 @@ information used in connecting with ICE.
 %setup -q -n %{name}-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
-
+%configure
 %make
 
 %install
@@ -34,6 +32,5 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/iceauth
-%{_mandir}/man1/iceauth.1x.bz2
-
+%{_mandir}/man1/iceauth.1.*
 
