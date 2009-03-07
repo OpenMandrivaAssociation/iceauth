@@ -1,6 +1,6 @@
 Name: iceauth
 Version: 1.0.2
-Release: %mkrel 4
+Release: %mkrel 5
 Summary: ICE authority file utility
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
