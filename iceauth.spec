@@ -1,5 +1,5 @@
 Name: iceauth
-Version: 1.0.3
+Version: 1.0.4
 Release: %mkrel 1
 Summary: ICE authority file utility
 Group: Development/X11
