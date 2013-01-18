@@ -29,7 +29,6 @@ information used in connecting with ICE.
 %{_mandir}/man1/iceauth.1.*
 
 
-
 %changelog
 * Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.4-2mdv2011.0
 + Revision: 665496
