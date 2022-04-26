@@ -1,10 +1,10 @@
 Summary:	ICE authority file utility
 Name:		iceauth
-Version:	1.0.8
-Release:	2
+Version:	1.0.9
+Release:	1
 License:	MIT
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(ice)
 BuildRequires:	pkgconfig(xorg-macros)
@@ -15,15 +15,15 @@ The iceauth program is used to edit and display the authorization
 information used in connecting with ICE.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/iceauth
-%{_mandir}/man1/iceauth.1.*
+%doc %{_mandir}/man1/iceauth.1.*
