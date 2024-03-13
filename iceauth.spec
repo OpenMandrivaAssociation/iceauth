@@ -1,7 +1,7 @@
 Summary:	ICE authority file utility
 Name:		iceauth
-Version:	1.0.9
-Release:	2
+Version:	1.0.10
+Release:	1
 License:	MIT
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
